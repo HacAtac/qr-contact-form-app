@@ -12,6 +12,8 @@ node_modules/
 *.swp
 *.bak
 
+.env
+
 # Ignore build files
 dist/
 build/
