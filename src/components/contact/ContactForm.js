@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -28,7 +28,7 @@ const ContactForm = () => {
     }
     delete dataToSend.otherService;
 
-    fetch(`${process.env.REACT_APP_BACKEND_URL}/contact/submit`, {
+    fetch(`${process.env.REACT_APP_BACKEND_URL}`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
