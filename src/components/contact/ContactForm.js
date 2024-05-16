@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -10,6 +11,8 @@ const ContactForm = () => {
     otherService: '',
     message: ''
   });
+  
+  const navigate = useNavigate();
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -53,6 +56,9 @@ const ContactForm = () => {
           otherService: '',
           message: ''
         });
+        setTimeout(() => {
+          navigate('/');
+        }, 3500); // Redirect after notification disappears
       })
       .catch((error) => {
         console.error('Error:', error);
