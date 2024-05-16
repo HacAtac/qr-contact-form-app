@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ee5b4152-535a-4389-bc94-4b75533255e0" name="Changes" comment="Remove backend from UI app">
+      <change beforePath="$PROJECT_DIR$/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/contact.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2gUWS6YAJ30KqH1zjX294LK4a3R" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Jordan/Desktop/qr-contact-form-app"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Jordan\Desktop\qr-contact-form-app" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-17.0.9-corretto-17.0.9-4caba194b151-107bc6b7" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ee5b4152-535a-4389-bc94-4b75533255e0" name="Changes" comment="" />
+      <created>1715752632198</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1715752632198</updated>
+    </task>
+    <task id="LOCAL-00001" summary="init structure">
+      <option name="closed" value="true" />
+      <created>1715752859839</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1715752859839</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Update QR code">
+      <option name="closed" value="true" />
+      <created>1715753438622</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1715753438622</updated>
+    </task>
+    <task id="LOCAL-00003" summary="update to point to the contact form">
+      <option name="closed" value="true" />
+      <created>1715753609716</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1715753609716</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Added backend express server, routes, controller, and service layers to handle form submit. And email alert upon submission">
+      <option name="closed" value="true" />
+      <created>1715756520734</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1715756520734</updated>
+    </task>
+    <task id="LOCAL-00005" summary="added twillio integration for sms alerts upon form submit">
+      <option name="closed" value="true" />
+      <created>1715758216224</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1715758216224</updated>
+    </task>
+    <task id="LOCAL-00006" summary="updates">
+      <option name="closed" value="true" />
+      <created>1715869326134</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1715869326134</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Remove backend from UI app">
+      <option name="closed" value="true" />
+      <created>1715870307505</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1715870307505</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
+    <servers />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.py" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="init structure" />
+    <MESSAGE value="Update QR code" />
+    <MESSAGE value="update to point to the contact form" />
+    <MESSAGE value="Added backend express server, routes, controller, and service layers to handle form submit. And email alert upon submission" />
+    <MESSAGE value="added twillio integration for sms alerts upon form submit" />
+    <MESSAGE value="updates" />
+    <MESSAGE value="Remove backend from UI app" />
+    <option name="LAST_COMMIT_MESSAGE" value="Remove backend from UI app" />
+  </component>
+</project>
