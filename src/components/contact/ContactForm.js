@@ -28,7 +28,7 @@ const ContactForm = () => {
     }
     delete dataToSend.otherService;
 
-    fetch(`${process.env.REACT_APP_BACKEND_URL}`, {
+    fetch(`${process.env.REACT_APP_BACKEND_URL/contact/submit}`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
