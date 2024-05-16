@@ -28,7 +28,7 @@ const ContactForm = () => {
     }
     delete dataToSend.otherService;
 
-    fetch(`${process.env.REACT_APP_BACKEND_URL}/contact/submit`, { // Correcting the fetch URL
+    fetch(`${process.env.REACT_APP_BACKEND_URL}/contact/submit`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -36,7 +36,12 @@ const ContactForm = () => {
       },
       body: JSON.stringify(dataToSend)
     })
-      .then((response) => response.json())
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        return response.json();
+      })
       .then((data) => {
         showNotification(data.message, 'success');
         setFormData({
