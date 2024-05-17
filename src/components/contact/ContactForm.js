@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import './ContactForm.css';
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -82,52 +83,73 @@ const ContactForm = () => {
 
   return (
     <div className="container">
-      <form id="contactForm" onSubmit={handleSubmit}>
-        <div className="form-group">
-          <label htmlFor="name">Name:</label>
-          <input type="text" id="name" name="name" value={formData.name} onChange={handleChange} required />
-        </div>
-        <div className="form-group">
-          <label htmlFor="email">Email:</label>
-          <input type="email" id="email" name="email" value={formData.email} onChange={handleChange} required />
-        </div>
-        <div className="form-group">
-          <label htmlFor="phone">Phone:</label>
-          <input type="tel" id="phone" name="phone" value={formData.phone} onChange={handleChange} required />
-        </div>
-        <div className="form-group">
-          <label htmlFor="address">Address:</label>
-          <input type="text" id="address" name="address" value={formData.address} onChange={handleChange} required />
-        </div>
-        <div className="form-group">
-          <label htmlFor="services">Select Service:</label>
-          <select id="services" name="services" value={formData.services} onChange={handleChange} required>
-            <option value="">Choose a service</option>
-            <option value="lawncare">Lawn Care</option>
-            <option value="aeration">Aeration</option>
-            <option value="mulchinstallation">Mulch Installation</option>
-            <option value="bushtrimming">Bush Trimming</option>
-            <option value="fallspringcleanup">Fall or Spring Clean Up</option>
-            <option value="sodinstallation">Sod Installation</option>
-            <option value="landscapeinstallation">Landscape Installation</option>
-            <option value="other">Other</option>
-          </select>
-        </div>
-        {formData.services === 'other' && (
+      <div className="form-card">
+        <h2>Contact Us</h2>
+        <p>Please fill out the form below to get in touch with us. We look forward to hearing from you!</p>
+        <form id="contactForm" onSubmit={handleSubmit}>
           <div className="form-group">
-            <label htmlFor="otherService">Other Service:</label>
-            <input type="text" id="otherService" name="otherService" value={formData.otherService} onChange={handleChange} required />
+            <label htmlFor="name">Name:</label>
+            <input type="text" id="name" name="name" value={formData.name} onChange={handleChange} required />
           </div>
-        )}
-        <div className="form-group">
-          <label htmlFor="message">Message:</label>
-          <textarea id="message" name="message" value={formData.message} onChange={handleChange} required></textarea>
-        </div>
-        <button type="submit">Submit</button>
-      </form>
-      <div id="notification" className="notification"></div>
+          <div className="form-group">
+            <label htmlFor="email">Email:</label>
+            <input type="email" id="email" name="email" value={formData.email} onChange={handleChange} required />
+          </div>
+          <div className="form-group">
+            <label htmlFor="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" value={formData.phone} onChange={handleChange} required />
+          </div>
+          <div className="form-group">
+            <label htmlFor="address">Address:</label>
+            <input type="text" id="address" name="address" value={formData.address} onChange={handleChange} required />
+          </div>
+          <div className="form-group">
+            <label htmlFor="services">Select Service:</label>
+            <select id="services" name="services" value={formData.services} onChange={handleChange} required>
+              <option value="">Choose a service</option>
+              <option value="lawncare">Lawn Care</option>
+              <option value="aeration">Aeration</option>
+              <option value="mulchinstallation">Mulch Installation</option>
+              <option value="bushtrimming">Bush Trimming</option>
+              <option value="fallspringcleanup">Fall or Spring Clean Up</option>
+              <option value="sodinstallation">Sod Installation</option>
+              <option value="landscapeinstallation">Landscape Installation</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          {formData.services === 'other' && (
+            <div className="form-group">
+              <label htmlFor="otherService">Other Service:</label>
+              <input type="text" id="otherService" name="otherService" value={formData.otherService} onChange={handleChange} required />
+            </div>
+          )}
+          <div className="form-group">
+            <label htmlFor="message">Message:</label>
+            <textarea id="message" name="message" value={formData.message} onChange={handleChange} required></textarea>
+          </div>
+          <button type="submit">Submit</button>
+        </form>
+        <div id="notification" className="notification"></div>
+      </div>
     </div>
   );
 };
 
 export default ContactForm;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

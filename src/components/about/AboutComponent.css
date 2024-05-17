@@ -1,0 +1,114 @@
+.about-container {
+    padding: 40px 20px;
+    background-color: #f5f5f5;
+    color: #333;
+    font-family: 'Arial, sans-serif';
+  }
+  
+  .about-header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .about-header h1 {
+    font-size: 2.5em;
+    color: #4169e1; /* Royal Blue */
+  }
+  
+  .about-header p {
+    font-size: 1.2em;
+    color: #666;
+  }
+  
+  .about-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+  #will {
+    height: 250px;
+    width: 250px;
+  }
+  
+  .about-mission, .about-vision, .about-values, .about-team {
+    margin-bottom: 30px;
+  }
+  
+  .about-mission h2, .about-vision h2, .about-values h2, .about-team h2 {
+    font-size: 2em;
+    color: #4169e1; /* Royal Blue */
+    margin-bottom: 10px;
+  }
+  
+  .about-mission p, .about-vision p {
+    font-size: 1.1em;
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  .about-values ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .about-values li {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  .about-values strong {
+    color: #4169e1; /* Royal Blue */
+  }
+  
+  .team-members {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .team-member {
+    text-align: center;
+    margin: 20px;
+    flex: 1 1 calc(33% - 40px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 20px;
+    transition: transform 0.3s;
+  }
+  
+  .team-member img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .team-member h3 {
+    font-size: 1.5em;
+    color: #333;
+  }
+  
+  .team-member p {
+    font-size: 1em;
+    color: #666;
+  }
+  
+  .team-member:hover {
+    transform: translateY(-10px);
+  }
+  
+  @media (max-width: 768px) {
+    .team-members {
+      flex-direction: column;
+    }
+  
+    .team-member {
+      margin: 20px 0;
+    }
+  }
+  

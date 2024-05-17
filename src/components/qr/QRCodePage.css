@@ -1,57 +1,118 @@
+/* QRCodePage.css */
+
 .qr-container {
-    text-align: center;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.qr-section, .testimonials-section {
+  margin-bottom: 40px;
+}
+
+.qr-section {
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.qr-code-wrapper {
+  margin: 20px auto;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid #4169e1; /* Royal Blue */
+  border-radius: 10px;
+  background-color: #fff;
+  position: relative;
+  animation: pulse 2s infinite;
+  transition: box-shadow 0.3s;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 10px rgba(65, 105, 225, 0.5); /* Royal Blue */
   }
-  
+  50% {
+    box-shadow: 0 0 20px rgba(65, 105, 225, 0.8); /* Royal Blue */
+  }
+  100% {
+    box-shadow: 0 0 10px rgba(65, 105, 225, 0.5); /* Royal Blue */
+  }
+}
+
+.qr-code-wrapper:hover {
+  box-shadow: 0 0 30px rgba(65, 105, 225, 1); /* Royal Blue */
+}
+
+.qr-code {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s;
+}
+
+.qr-section:hover .qr-code-wrapper {
+  transform: scale(1.05);
+}
+
+.contact-button {
+  margin-top: 20px;
+  background-color: #4169e1; /* Royal Blue */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact-button:hover {
+  background-color: #3554b2;
+}
+
+.testimonials-section {
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.carousel .slide {
+  background: none;
+}
+
+.carousel .testimonial {
+  text-align: left;
+  padding: 0 20px;
+  max-width: 600px;
+  margin: auto;
+}
+
+@media (max-width: 768px) {
+  .qr-container {
+    padding: 15px;
+  }
+
   .qr-code-wrapper {
-    margin: 20px auto;
-    width: 200px;
-    height: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 5px solid #4169e1; /* Royal Blue */
-    border-radius: 10px;
-    background-color: #f8f9fa;
+    width: 150px;
+    height: 150px;
   }
-  
-  .qr-code {
-    width: 100%;
-    height: 100%;
-  }
-  
+
   .contact-button {
-    margin-top: 20px;
-    background-color: #4169e1; /* Royal Blue */
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 18px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+    font-size: 16px;
+    padding: 8px 16px;
   }
-  
-  .contact-button:hover {
-    background-color: #3554b2;
+
+  .testimonials-section {
+    padding: 15px;
   }
-  
-  @media (max-width: 768px) {
-    .qr-container {
-      padding: 15px;
-    }
-  
-    .qr-code-wrapper {
-      width: 150px;
-      height: 150px;
-    }
-  
-    .contact-button {
-      font-size: 16px;
-      padding: 8px 16px;
-    }
-  }
-  
+}
