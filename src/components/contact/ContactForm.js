@@ -10,16 +10,17 @@ const ContactForm = () => {
     address: '',
     services: '',
     otherService: '',
-    message: ''
+    message: '',
+    optIn: false
   });
   
   const navigate = useNavigate();
 
   const handleChange = (e) => {
-    const { name, value } = e.target;
+    const { name, value, type, checked } = e.target;
     setFormData((prevFormData) => ({
       ...prevFormData,
-      [name]: value
+      [name]: type === 'checkbox' ? checked : value
     }));
   };
 
@@ -55,7 +56,8 @@ const ContactForm = () => {
           address: '',
           services: '',
           otherService: '',
-          message: ''
+          message: '',
+          optIn: false
         });
         setTimeout(() => {
           navigate('/');
@@ -127,6 +129,15 @@ const ContactForm = () => {
             <label htmlFor="message">Message:</label>
             <textarea id="message" name="message" value={formData.message} onChange={handleChange} required></textarea>
           </div>
+          <div className="form-group opt-in">
+            <label htmlFor="optIn">
+              <input type="checkbox" id="optIn" name="optIn" checked={formData.optIn} onChange={handleChange} required />
+              I consent to receive communications from Green King Landscaping.
+              <span className="tooltip">?
+                <span className="tooltiptext">By checking the opt-in box on our contact form, you consent to receive SMS messages from us regarding your inquiries and our services. If you wish to opt-out of receiving these messages, you can do so at any time by replying "STOP" to any message you receive.</span>
+              </span>
+            </label>
+          </div>
           <button type="submit">Submit</button>
         </form>
         <div id="notification" className="notification"></div>
@@ -136,20 +147,3 @@ const ContactForm = () => {
 };
 
 export default ContactForm;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

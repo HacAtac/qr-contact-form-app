@@ -17,7 +17,13 @@ const PrivacyPolicy = () => (
       <section className="privacy-section">
         <h2>How We Use Your Information</h2>
         <p>
-          The information we collect from you is used to respond to your inquiries, provide the services you request, and improve our services. We may also use your information to contact you with sms text using trilio, newsletters, marketing or promotional materials, and other information that may be of interest to you.
+          The information we collect from you is used to respond to your inquiries, provide the services you request, and improve our services. We may also use your information to contact you with SMS text messages using Twilio, newsletters, marketing or promotional materials, and other information that may be of interest to you.
+        </p>
+      </section>
+      <section className="privacy-section">
+        <h2>Consent to Receive SMS</h2>
+        <p>
+          By checking the opt-in box on our contact form, you consent to receive SMS messages from us regarding your inquiries and our services. If you wish to opt-out of receiving these messages, you can do so at any time by replying "STOP" to any message you receive.
         </p>
       </section>
       <section className="privacy-section">
@@ -29,13 +35,13 @@ const PrivacyPolicy = () => (
       <section className="privacy-section">
         <h2>Data Security</h2>
         <p>
-          We implement a variety of security measures to maintain the safety of your personal information. Your personal information is contained behind secured networks and is only accessible by a limited number of persons who have special access rights to such systems, and are required to keep the information confidential.
+          We implement a variety of security measures to maintain the safety of your personal information. Your personal information is contained behind secured networks and is only accessible by a limited number of persons who have special access rights to such systems and are required to keep the information confidential.
         </p>
       </section>
       <section className="privacy-section">
         <h2>Your Consent</h2>
         <p>
-          By using our site, you consent to our website's privacy policy.
+          By using our site, you consent to our website's privacy policy and agree to our terms of service.
         </p>
       </section>
       <section className="privacy-section">
@@ -52,7 +58,7 @@ const PrivacyPolicy = () => (
         <p>
           Green King Landscaping <br />
           205 Osage Ct, Georgetown, TX 78626<br />
-          Georgetown, Tx, 78626 <br />
+          Georgetown, TX 78626 <br />
           greenkinglandscaping2023@gmail.com <br />
           +1 (512) 876-7389
         </p>
