@@ -117,16 +117,16 @@ button[type="submit"]:hover {
 
 @media (max-width: 768px) {
   .container {
-      padding: 15px !important;
+    padding: 15px !important;
   }
 
   .form-group input,
   .form-group select,
   .form-group textarea {
-      font-size: 14px !important;
+    font-size: 14px !important;
   }
 
   button[type="submit"] {
-      font-size: 16px !important;
+    font-size: 16px !important;
   }
 }
