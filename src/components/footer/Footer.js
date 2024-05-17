@@ -10,7 +10,7 @@ const Footer = () => (
       <a href="/privacy">Privacy Policy</a>
       <a href="/contact">Contact</a>
     </div>
-    <p>&copy; 2024 Landscaping and Handyman Services. All Rights Reserved.</p>
+    <p>&copy; 2024 Green King Landscaping. All Rights Reserved.</p>
   </footer>
 );
 

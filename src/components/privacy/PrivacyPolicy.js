@@ -50,11 +50,11 @@ const PrivacyPolicy = () => (
           If there are any questions regarding this privacy policy, you may contact us using the information below:
         </p>
         <p>
-          [Your Company Name] <br />
-          [Company Address] <br />
-          [City, State, Zip Code] <br />
-          [Email Address] <br />
-          [Phone Number]
+          Green King Landscaping <br />
+          205 Osage Ct, Georgetown, TX 78626<br />
+          Georgetown, Tx, 78626 <br />
+          greenkinglandscaping2023@gmail.com <br />
+          +1 (512) 876-7389
         </p>
       </section>
     </div>

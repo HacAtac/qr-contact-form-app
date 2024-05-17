@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 import Header from './components/header/Header';
 import ContactForm from './components/contact/ContactForm';
 import AboutComponent from './components/about/AboutComponent';
@@ -10,21 +11,73 @@ import QRCodePage from './components/qr/QRCodePage';
 import './App.css';
 
 const App = () => (
-  <Router>
-    <div className="page-container">
-      <Header />
-      <div className="content-wrap">
-        <Routes>
-          <Route path="/" element={<QRCodePage />} />
-          <Route path="/contact" element={<ContactPage />} />
-          <Route path="/about" element={<AboutComponent />} />
-          <Route path="/privacy" element={<PrivacyPolicy />} />
-          <Route path="/services" element={<Services />} />
-        </Routes>
+  <HelmetProvider>
+    <Router>
+      <div className="page-container">
+        <Header />
+        <div className="content-wrap">
+          <Routes>
+            <Route 
+              path="/" 
+              element={
+                <>
+                  <Helmet>
+                    <title>Home - Green King Landscaping</title>
+                  </Helmet>
+                  <QRCodePage />
+                </>
+              } 
+            />
+            <Route 
+              path="/contact" 
+              element={
+                <>
+                  <Helmet>
+                    <title>Contact - Green King Landscaping</title>
+                  </Helmet>
+                  <ContactPage />
+                </>
+              } 
+            />
+            <Route 
+              path="/about" 
+              element={
+                <>
+                  <Helmet>
+                    <title>About - Green King Landscaping</title>
+                  </Helmet>
+                  <AboutComponent />
+                </>
+              } 
+            />
+            <Route 
+              path="/privacy" 
+              element={
+                <>
+                  <Helmet>
+                    <title>Privacy Policy - Green King Landscaping</title>
+                  </Helmet>
+                  <PrivacyPolicy />
+                </>
+              } 
+            />
+            <Route 
+              path="/services" 
+              element={
+                <>
+                  <Helmet>
+                    <title>Services - Green King Landscaping</title>
+                  </Helmet>
+                  <Services />
+                </>
+              } 
+            />
+          </Routes>
+        </div>
+        <Footer />
       </div>
-      <Footer />
-    </div>
-  </Router>
+    </Router>
+  </HelmetProvider>
 );
 
 const ContactPage = () => (

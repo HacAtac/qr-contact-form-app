@@ -48,7 +48,7 @@ const Services = () => (
   <div className="services-container">
     <div className="services-header">
       <h1>Our Services</h1>
-      <p>Explore the wide range of services we offer to help your business grow.</p>
+      <p>Transforming Your Outdoor Spaces through Excellence.</p>
     </div>
     <div className="services-list">
       {services.map((service, index) => (
