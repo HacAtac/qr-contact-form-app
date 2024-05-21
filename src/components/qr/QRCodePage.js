@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import './QRCodePage.css'; // Import the new CSS file
+import './QRCodePage.css';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
@@ -48,7 +48,7 @@ const QRCodePage = () => (
       <h1>Contact Me</h1>
       <p>Scan the QR code to reach the contact form.</p>
       <div className="qr-code-wrapper">
-        <img src="/qr-code.png" alt="QR Code" className="qr-code" />
+        <img src="/greenkinglandscapingcontactmeqr.png" alt="QR Code" className="qr-code" />
       </div>
       <p>Or click the button below to go directly to the contact form:</p>
       <Link to="/contact">
